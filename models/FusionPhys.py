@@ -9,7 +9,7 @@ class FusionPhysBase(nn.Module):
         self.input2=input2
         self.fusion=blocks
         self.predictor = predictor
-        self.type_embedding=None if self.input2 is None else nn.Embedding(2,dim)
+        self.type_embeddings=None if self.input2 is None else nn.Embedding(2,dim)
 
     def forward(self,x1:torch.Tensor,x2:Optional[torch.Tensor]):
         x1=self.input1(x1)
@@ -56,4 +56,5 @@ class FusionPhys:
             PhysiologicalInteraction(dim),
             Predictor(),
             dim
+
         )
