@@ -1,6 +1,6 @@
 ## FusionPhys
 
-![image](https://github.com/ChH_Ying/FusionPhys/blob/master/framework.png)    
+![image](framework.png)    
 
 ## Dataset Preprocessing
 The original videos are firstly preprocessed to crop the face. Facial landmarks are generated using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace).
